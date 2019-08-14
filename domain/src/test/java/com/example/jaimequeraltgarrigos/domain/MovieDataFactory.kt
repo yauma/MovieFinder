@@ -36,7 +36,7 @@ object MovieDataFactory {
     fun getBookmarkedMoviesList(count: Int): List<Movie> {
         val bookmarkedMovieList = mutableListOf<Movie>()
         repeat(count) {
-            bookmarkedMovieList.add(randomMovie())
+            bookmarkedMovieList.add(randomBookmarked())
         }
         return bookmarkedMovieList
     }
